@@ -1,0 +1,66 @@
+/* Estilos generales */
+.pie {
+  background-color: #363839;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img {
+  width: 200px; /* Ajusta el ancho de la imagen del logo según sea necesario */
+}
+
+.parrafo p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-family: Eras LIght ITC;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.formulario {
+  max-width: 400px; /* Ajusta el ancho máximo del formulario según sea necesario */
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Garantiza que el padding y el borde se incluyan en el ancho total */
+}
+
+/* Estilo para el botón de enviar */
+button[type="submit"] {
+  background-color: #CB0202; /* Color de fondo verde */
+  color: white; /* Color del texto blanco */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Eras LIght ITC;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button[type="submit"]:hover {
+  background-color: #FFFFFF; /* Cambio de color de fondo al pasar el mouse */
+  color: black;
+}
+
+@media screen and (max-width: 638px) {
+  .pie {
+    flex-direction: column; /* Coloca los elementos en columna en pantallas pequeñas */
+    text-align: center; /* Centra todo el contenido */
+  }
+
+  .parrafo p {
+    font-size: 14px; /* Reduce el tamaño de fuente para pantallas muy pequeñas */
+  }
+}

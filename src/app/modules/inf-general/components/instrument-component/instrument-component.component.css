@@ -1,0 +1,80 @@
+h1{
+    font-family: Eras LIght ITC;
+    font-size: 80px;
+    color: #363839;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+  }
+
+/* Estilos para las cards */
+.card {
+    border: 2px solid #888888; /* Borde gris */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar contenido que sobresale */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+  }
+  
+  /* Estilos para la imagen de la card */
+  .card-img-top {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática para mantener la proporción */
+    object-fit: cover; /* Ajustar la imagen para cubrir el contenedor */
+  }
+  
+  /* Estilos para el cuerpo de la card */
+  .card-body {
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  /* Estilos para el título de la card */
+  .card-title {
+    font-size: 30px; /* Tamaño de fuente del título */
+    margin-bottom: 15px; /* Espaciado inferior */
+    margin-top: 2px;
+  }
+  
+  /* Estilos para el botón */
+  .boton {
+    background-color: #818A91; /* Color de fondo azul */
+    color: #FFFFFF; /* Color de texto blanco */
+    font-size: 20px;
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el mouse */
+    margin-left: 90px;
+  }
+  
+  /* Estilos para el botón al pasar el mouse */
+  .boton:hover {
+    background-color: #B91C1C; /* Color de fondo azul más oscuro */
+  }
+  
+  /* Estilos para el contenedor de las cards */
+  .row {
+    display: flex; /* Utilizar flexbox para alinear las cards */
+  flex-wrap: wrap; /* Permitir que las cards se envuelvan en filas */
+  justify-content: center; /* Centrar las cards horizontalmente */
+  margin: 0 auto; /* Margen automático en los lados izquierdo y derecho */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  padding: 20px; /* Espaciado interno */
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 50px; /* Reducir el tamaño del título para pantallas pequeñas */
+      margin-left: 5%; /* Ajustar el margen izquierdo para pantallas pequeñas */
+  }
+  
+  .card {
+      width: calc(50% - 40px); /* Ajustar el ancho de las cards para pantallas pequeñas */
+      margin: 20px 20px; /* Ajustar el margen entre las cards para pantallas pequeñas */
+  }
+  
+  .boton {
+      margin-left: 0; /* Eliminar el margen izquierdo para pantallas pequeñas */
+      margin-right: 0; /* Eliminar el margen derecho para pantallas pequeñas */
+  }
+}

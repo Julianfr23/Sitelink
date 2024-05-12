@@ -1,0 +1,88 @@
+.contenedor {
+    width: 100%;
+    margin: 20px auto;
+    margin-top: 100px;
+  }
+  
+  h1 {
+    text-align: left;
+    font-family: Eras LIght ITC;
+    font-size: 50px;
+    color: #363839;
+    font-weight: bold;
+    margin-left: 10%;
+    
+  }
+.contenedor .informacion {
+    font-family: Eras LIght ITC;
+    list-style: none;
+    margin-left: 20%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #363839;
+}  
+  
+.contenedor .requisitos {
+    margin-left: 40%;
+    margin-top: -19%;
+    font-family: Eras LIght ITC;
+    font-size: 18px;
+    font-weight: bold;
+    color: #363839;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 40px;
+    margin-left: 39%;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #CB0202;
+  }
+  
+  li:hover {
+    color: #CB0202;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 30px; /* Reducir el tamaño del título para pantallas muy pequeñas */
+    }
+  
+    .contenedor .informacion {
+      margin-left: 0; /* Eliminar el margen izquierdo para pantallas muy pequeñas */
+      font-size: 16px; /* Reducir el tamaño de fuente para pantallas muy pequeñas */
+    }
+  
+    .contenedor .requisitos {
+      margin-left: 0; /* Eliminar el margen izquierdo para pantallas muy pequeñas */
+      margin-top: -5%; /* Ajustar la posición para pantallas muy pequeñas */
+      font-size: 14px; /* Reducir el tamaño de fuente para pantallas muy pequeñas */
+    }
+  
+    button {
+      padding: 10px 10px; /* Ajustar el padding para pantallas muy pequeñas */
+    }
+  }

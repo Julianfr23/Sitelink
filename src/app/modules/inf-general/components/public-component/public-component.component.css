@@ -1,0 +1,81 @@
+.contenedor {
+  max-width: 1000px; /* Ajusta el ancho máximo según tus preferencias */
+  margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+  text-align: center; /* Esto centra el texto dentro del contenedor */
+}
+
+.primero, .segundo, .tercero, .cuarto, .boton {
+  margin-bottom: 20px; /* Agrega un espacio entre cada sección */
+}
+h1, h2, p, h3 {
+  text-align: left; /* Alinea los títulos a la izquierda */
+  
+}
+h1{
+  font-family: Eras LIght ITC;
+  font-size: 56px;
+  color: #363839;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+h2{
+  font-family: Eras LIght ITC;
+  font-size: 26px;
+  color: #363839;
+  margin-top: 10px;
+  font-weight: bold;
+}
+h3{
+  font-family: Eras LIght ITC;
+  font-size: 22px;
+  color: #363839;
+  margin-top: 10px;
+}
+p{
+  font-family: Eras LIght ITC;
+  font-size: 20px;
+  color: #363839;
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+.contenedor .boton .ley {
+  font-size: 18px;
+  padding: 20px 40px;
+  text-decoration: none;
+  background-color: #363839;
+  font-family: Eras LIght ITC;
+  color: #FFFFFF;
+  font-weight: bold;
+  
+  
+}
+
+.contenedor .boton .ley:hover {
+  background-color: #CB0202;
+  color: #FFFFFF;
+ 
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px; /* Reducir el tamaño de fuente para pantallas pequeñas */
+    margin-top: 8%; /* Ajusta el margen superior */
+    margin-bottom: 5%; /* Ajusta el margen inferior */
+  }
+  
+  h2 {
+    font-size: 22px; /* Reducir el tamaño de fuente para pantallas pequeñas */
+    margin-top: 8px; /* Ajusta el margen superior */
+  }
+  
+  h3 {
+    font-size: 18px; /* Reducir el tamaño de fuente para pantallas pequeñas */
+    margin-top: 8px; /* Ajusta el margen superior */
+  }
+  
+  p {
+    font-size: 16px; /* Reducir el tamaño de fuente para pantallas pequeñas */
+    margin-top: 1.2%; /* Ajusta el margen superior */
+  }
+}

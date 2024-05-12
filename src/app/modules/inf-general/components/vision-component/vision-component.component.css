@@ -1,0 +1,72 @@
+.titulos {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 600px; /* Define el ancho deseado para las tarjetas */
+    margin: 0 auto; /* Centra horizontalmente las tarjetas */
+    height: 800px;
+    margin-bottom: 20px;
+    border-radius: 10px ;
+    border: 3px solid#dfdfdf;
+  }
+  
+  .card img {
+    max-width: 500px; /* Define el ancho máximo deseado para las imágenes */
+    display: block; /* Hace que la imagen sea un elemento de bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    margin-top: 15px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+    color: #363839;
+    font-family: Eras LIght ITC;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    margin-bottom: 5px;
+    text-align: center;
+    color: #363839;
+    font-family: Eras LIght ITC;
+    font-size: 18px;
+    margin-top: 18px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .card span{
+    color: red;
+  }
+
+  
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .card {
+      width: 90%; /* Utiliza un porcentaje del ancho de la pantalla */
+      max-width: none; /* Elimina el ancho máximo para que se ajuste al ancho de la pantalla */
+  }
+
+  .card-title {
+      font-size: 30px; /* Reducir el tamaño del título para pantallas pequeñas */
+  }
+
+  .card-text {
+      font-size: 16px; /* Reducir el tamaño del texto para pantallas pequeñas */
+  }
+}

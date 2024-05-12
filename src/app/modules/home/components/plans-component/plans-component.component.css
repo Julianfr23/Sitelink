@@ -1,0 +1,105 @@
+h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 60px;
+  color: #363839;
+  font-weight: bold;
+  font-family: Eras LIght ITC;
+}
+
+/* Estilos del contenedor */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos de los planes */
+.planes {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: row; /* Cambiamos la dirección a horizontal */
+  
+}
+
+.plan {
+  width: 300px; /* Ancho fijo */
+  height: 320px; /* Altura fija */
+  margin: 10px 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  background-color: #f3f3f3;
+}
+
+.plan h2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Eras LIght ITC;
+  background: #363839;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+.plan ul {
+  padding: 20px 10px ;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-items: center; /* Centra el contenido horizontalmente */
+  
+}
+
+.plan ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: Eras LIght ITC;
+  color: #363839;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+
+.plan ul li:not(:last-child)::after { /* Añade la línea después de todos los elementos menos el último */
+  content: "";
+  position: absolute;
+  width: calc(100% - 20px); /* Ancho de la línea */
+  height: 2px;
+  background: #797c7e; /* Color de la línea */
+  bottom: -5px; /* Ajusta la posición para que la línea esté debajo del texto */
+  left: 5px; /* Ajusta la posición para centrar la línea horizontalmente */
+}
+
+.plan ul li .img1 {
+  margin-right: 10px; /* Agrega espacio entre la imagen y el texto */
+  width: 18.2px; /* Ancho de la imagen */
+  height: 18px; /* Altura de la imagen */
+}
+
+.plan ul li .img2 {
+  margin-right: 10px; /* Agrega espacio entre la imagen y el texto */
+  width: 18.2px; /* Ancho de la imagen */
+  height: 18px; /* Altura de la imagen */
+}
+
+.plan .contrato {
+  display: block;
+  width: 150px; /* Ancho del botón */
+  margin: auto; /* Centra horizontalmente */
+  background: #9b9d9e;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Eras LIght ITC;
+  border-radius: 12px ;
+}
+
+.plan .contrato:hover {
+  background-color: #c5c5c5;
+}

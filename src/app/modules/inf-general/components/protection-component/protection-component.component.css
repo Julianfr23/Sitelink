@@ -1,0 +1,48 @@
+.titulo {
+    margin-top: 30px;
+    margin-left: 45px; 
+    font-weight: bold;
+  }
+
+.titulo h1{
+    font-family: Eras LIght ITC;
+    font-size: 80px;
+    color: #363839;
+    margin-bottom: 50px;
+}
+  
+  .Informacion {
+    display: flex; /* Usar flexbox para alinear elementos */
+  }
+  
+  .Informacion img {
+    width: 30%; /* Ancho de la imagen al 50% del contenedor */
+    height: 30%;
+    margin-right: 50px; /* Espacio entre la imagen y el párrafo */
+    margin-left: 100px;
+    margin-bottom: 150px;
+  }
+  
+  .texto {
+    width: 50%; /* Ancho del párrafo al 50% del contenedor */
+    line-height: 1;
+    font-family: Eras LIght ITC;
+    font-size: 30px;
+    color: #363839;
+    margin-right: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .titulo h1 {
+        font-size: 30px; /* Reducir aún más el tamaño de fuente para pantallas muy pequeñas */
+    }
+    
+    .Informacion img {
+        width: 100%; /* Ancho de la imagen al 100% del contenedor para pantallas pequeñas */
+    }
+    
+    .texto {
+        width: 100%; /* Ancho del párrafo al 100% del contenedor para pantallas pequeñas */
+        font-size: 18px; /* Reducir el tamaño de fuente para pantallas muy pequeñas */
+    }
+}

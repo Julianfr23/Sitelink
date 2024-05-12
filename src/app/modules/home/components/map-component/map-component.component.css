@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.cobertura {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cobertura h1 {
+  font-size: 54px; /* Tamaño de fuente del h1 */
+  font-weight: bold;
+  margin-bottom: 20px; /* Espacio entre el h1 y el h4 */
+  font-family: "Merriweather", serif;
+}
+
+.cobertura h4 {
+  font-size: 36px; /* Tamaño de fuente del h4 */
+  margin-bottom: 20px;
+  font-family: "Merriweather", serif;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center; /* Centra los mapas horizontalmente */
+  gap: 20px; /* Espacio entre los mapas */
+}
+
+.map-container .mapa1,
+.map-container .mapa2 {
+  width: 40%; /* Ancho completo */
+  max-width: 800px; /* Ancho máximo */
+  height: 450px;
+}
+
+/* Media queries para dispositivos de diferentes tamaños */
+@media screen and (max-width: 768px) {
+  .map-container {
+    flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+    align-items: center; /* Centra los mapas horizontalmente */
+  }
+
+  .map-container .mapa1,
+  .map-container .mapa2 {
+    width: 100%; /* Ancho completo */
+    max-width: 100%; /* Ancho máximo */
+    height: 450px;
+    margin-bottom: 20px; /* Espacio entre los mapas */
+  }
+}

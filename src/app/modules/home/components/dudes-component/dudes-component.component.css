@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia:wght@400;700&display=swap');
+
+.banner {
+  background-color: #363839;
+  color: #FFFFFF;
+  text-align: center;
+  padding:110px;
+  margin-top: 145px;
+}
+
+.banner .texto {
+  margin: 0 auto;
+  max-width: 100%;
+  font-family: Eras LIght ITC;
+  
+}
+
+.banner .texto h1 {
+  font-size: 60px;
+  margin-bottom: 25px;
+  font-family: Eras LIght ITC;
+  font-weight: bold;
+}
+.banner .boton {
+  margin-top: 40px;
+}
+
+.banner .boton .contrata {
+  font-size: 18px;
+  padding: 20px 40px;
+  text-decoration: none;
+  background-color: #CB0202;
+  font-family: Eras LIght ITC;
+  color: #FFFFFF;
+}
+
+.banner .boton .contrata:hover {
+  background-color: #fff;
+  color: #000;
+ 
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 640px) {
+  .banner {
+    padding: 60px 20px; /* Ajustar el padding vertical para pantallas muy pequeñas */
+    margin-top: 80px; /* Ajustar el margen superior para pantallas muy pequeñas */
+  }
+
+  .banner .texto h1 {
+    font-size: 30px; /* Reducir aún más el tamaño del título para pantallas muy pequeñas */
+    margin-bottom: 10px; /* Reducir aún más el margen inferior del título para pantallas muy pequeñas */
+  }
+
+  .banner .boton {
+    margin-top: 20px; /* Reducir aún más el margen superior del botón para pantallas muy pequeñas */
+  }
+
+  .banner .boton .contrata {
+    font-size: 14px; /* Reducir aún más el tamaño del texto del botón para pantallas muy pequeñas */
+    padding: 10px 20px; /* Reducir aún más el padding del botón para pantallas muy pequeñas */
+  }
+}
+

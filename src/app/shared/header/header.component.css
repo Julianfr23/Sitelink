@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Eras LIght ITC;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+  z-index: 2;
+  width: 100%;
+  max-width: 100%; /* Ajusta este valor según tus necesidades */
+  margin: 0 auto; /* Centra el encabezado en la pantalla */
+}
+
+.header .logo{
+  cursor: pointer;
+}
+
+.header .logo img{
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover{
+  transform: scale(1.2);
+}
+
+.header .nav-links{
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.header .nav-links li{
+  display: block;
+  padding: 0 20px;
+  color: black;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.header .nav-links li:hover{
+  transform: scale(1.1);
+  color: red;
+
+}
+
+.header .nav2-links{
+  list-style: none;
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  width: 200px;
+  background-color: #ffffff;
+  opacity: .8;
+}
+
+.header .nav2-links li{
+  display: block;
+  padding: 1px 20px;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  font-size: 17px;
+}
+
+.header .nav-links li:hover .nav2-links{
+  display: block;
+}
+.header .nav2-links li:hover{
+  transform: scale(1.1);
+  color: red;
+  
+
+}
+
+
+.header .btn{
+  font-weight: 700;
+  color:#262626;
+  font-weight: bold;
+  padding: 9px 25px;
+  background: #B91C1C;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .btn:hover{
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 638px) {
+  .header .menu-toggle {
+    display: block; /* Muestra el icono de menú en dispositivos móviles */
+    margin-left: auto; /* Mueve el icono de menú hacia la derecha */
+  }
+  
+  .header .nav-links {
+    display: none; /* Oculta los enlaces de navegación por defecto */
+  }
+  
+  .header .nav-links.active {
+    display: flex; /* Muestra los enlaces de navegación cuando se activa el menú */
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background-color: #fff; /* Fondo blanco para el menú desplegable */
+    position: absolute;
+    top: 100px; /* Ajusta la posición vertical del menú desplegable */
+    left: 0;
+    z-index: 999; /* Asegura que el menú desplegable esté por encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para el menú desplegable */
+  }
+}
+
+

@@ -1,0 +1,51 @@
+.listado-horizontal {
+    max-width: 100%;
+    margin: 5% 15%; /* Centra el listado horizontal */
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea */
+
+  }
+ .listado-horizontal .card{
+    width: 400px;
+    margin: 10px;
+    border: none;
+ }
+ .listado-horizontal .card h1{
+    font-size: 32px;
+    font-family: Eras LIght ITC;
+    font-weight: bold;
+    color: #363839;
+ }
+ .listado-horizontal .card p{
+    font-size: 18px;
+    font-family: Eras LIght ITC;
+    font-weight: bold;
+    color: #363839;
+    line-height: 1.2;
+ }
+ .listado-horizontal .titulo h1{
+    font-size: 50px;
+    font-family: Eras LIght ITC;
+    font-weight: bold;
+    color: #363839;
+    
+ }
+
+  
+  @media (min-width: 768px) {
+    .card {
+      width: calc(50% - 15px);
+      margin-right: 30px;
+    }
+    
+    .card:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .card {
+      width: calc(33.33% - 20px);
+      margin-right: 40px;
+    }
+  }

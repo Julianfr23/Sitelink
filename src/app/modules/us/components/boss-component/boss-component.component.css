@@ -1,0 +1,55 @@
+.banner {
+    background-color: #363839;
+    color: #FFFFFF;
+    padding:110px;
+    margin-top: 145px;
+  }
+  
+  .banner .texto {
+    margin-left: 10%;
+    max-width: 100%;
+    font-family: Eras LIght ITC;
+    
+  }
+  
+  .banner .texto h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+    font-family: Eras LIght ITC;
+    font-weight: bold;
+  }
+  .banner .boton {
+    margin-top: 40px;
+  }
+  
+  .banner .texto p{
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: Eras LIght ITC;
+    font-weight: bold;
+  }
+
+  /* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .banner {
+      padding: 60px 20px; /* Reducir el padding para pantallas pequeñas */
+      margin-top: 80px; /* Reducir el margen superior para pantallas pequeñas */
+  }
+
+  .banner .texto {
+      max-width: 100%; /* Permitir que el texto ocupe todo el ancho en pantallas pequeñas */
+  }
+
+  .banner .texto h1 {
+      font-size: 30px; /* Reducir el tamaño del título para pantallas pequeñas */
+      margin-bottom: 10px; /* Reducir el margen inferior del título */
+  }
+
+  .banner .texto p {
+      font-size: 18px; /* Reducir el tamaño del párrafo para pantallas pequeñas */
+  }
+
+  .banner .boton {
+      margin-top: 20px; /* Reducir el margen superior del botón para pantallas pequeñas */
+  }
+}
